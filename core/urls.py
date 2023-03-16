@@ -3,6 +3,6 @@ from django.urls import path
 from core.views import home
 
 urlpatterns = [
-    path('', home, name='LDFm')
+    path('l/kfjfk/', home, name='home')
 ]
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenShop</title>
+    <title>LDFm</title>
     <link rel="stylesheet" href=" {% static 'core/css/all.min.css'%} ">
     <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css'%}">
     <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
@@ -44,7 +44,7 @@
                             <a class="menu__link" href="#"><i class="menu__icon fal fa-user"></i>Sing in</a>
                         </li>
                         <li class="menu__link nav-item col-xl-2 text-xl-center">
-                            <a class="menu__link" href="#" tabindex="-1"><i
+                            <a class="menu__link" href="{% url 'home' %}" tabindex="-1"><i
                                     class="menu__icon fal fa-shopping-cart"></i>Cart</a>
                         </li>
                     </ul>
