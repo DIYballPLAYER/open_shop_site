@@ -1,14 +1,14 @@
 from django.conf import settings
-from django.urls import path
-
-from core.views import home
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('l/kfjfk/', home, name='home_page')
+    path('admin/', admin.site.urls),
+    path('', include('core.urls'))
 ]
 
 
-#if settings.DEBUG:
-#    from django.conf.urls.static import static
-#    urlpatterns += static(settings.STATIC_URL)
-#
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.STATIC_URL)
+

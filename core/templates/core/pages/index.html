@@ -44,7 +44,7 @@
                             <a class="menu__link" href="#"><i class="menu__icon fal fa-user"></i>Sing in</a>
                         </li>
                         <li class="menu__link nav-item col-xl-2 text-xl-center">
-                            <a class="menu__link" href="{% url 'home' %}" tabindex="-1"><i
+                            <a class="menu__link" href="#" tabindex="-1"><i
                                     class="menu__icon fal fa-shopping-cart"></i>Cart</a>
                         </li>
                     </ul>
@@ -194,7 +194,7 @@
             <div class="container">
                 <div class="row">
                     <h2 class="phone__title title">Cell Phone</h2>
-                    <a href="page3.html" class="col-lg-3 col-md-6 phones__card">
+                    <a href="{% url 'smthing' %}" class="col-lg-3 col-md-6 phones__card">
                         <img src="{% static 'core/img/phone1.png'%}" alt="" class="phones__img">
                         <img src="{% static 'core/img/Vector.png'%}" alt="" class="minImg minImg-light">
                         <img src="{% static 'core/img/Vector2.png'%}" alt="" class="minImg minImg-dark">
@@ -240,7 +240,7 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="slider__btn col-4 phones__btn">LEARN MORE</a>
+            <a href="{% url 'phones' %}" class="slider__btn col-4 phones__btn">LEARN MORE</a>
         </section>
         <section class="laptops">
             <div class="container">
